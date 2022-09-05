@@ -1,12 +1,12 @@
 
 import './App.css';
 
-import UseEffectAdvance from './components/UseEffectAdvance'
+import UseRef from './components/UseRef'
 
 function App() {
   return (
     <div className="App">
-     <UseEffectAdvance/>
+     <UseRef/>
     </div>
   );
 }

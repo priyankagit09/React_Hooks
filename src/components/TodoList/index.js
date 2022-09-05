@@ -22,17 +22,24 @@ const TodoList = () => {
     const handleEdit =(e) => {
         e.preventDefault();
         const newTodos = list.map((eachItem) => {
-            if (eachItem.id === editingItem.id) {
+            if (eachItem.id === editingItem.id) 
+              {
+                
                 return {
+                   
                     id: editingItem.id,
                     name: contactList.name
                 }
+                
             }
 
             else {
                 return eachItem
             }
-        })
+
+        }
+        
+        )
         setList(newTodos)
         setContact({id:"", name: ""})
         setEditingItem({id:"",isEditing: false})
@@ -55,7 +62,10 @@ const TodoList = () => {
 
     const onDeleteItem = (id) => {
 
-        const filtered = list.filter ((eachItem) => {
+        const filtered = list.filter ((eachItem) => 
+        
+        {
+            
             return eachItem.id !==id
         })
         setList(filtered)
